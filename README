@@ -16,7 +16,8 @@ On Red Hat like systems: sudo yum install libncurses5*
 The binary is located in ./out
 
 To execute use:
-./out/try_mmi
+sudo ./out/try_mmi
+Note: root access rights are mandatory for the application operation
 
 TODO
 - Clean list with removing elements when window closed.
