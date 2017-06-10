@@ -1,0 +1,25 @@
+The application supports 32 bit systems only. Extention to 64 bit is pending.
+
+Warning! Reading of some registers may crash you system.
+Writing to some registers of some deviced i.e. PMIC may damage your hardware.
+Do not try access the devices that are unknown to you
+Use the application on your own risk.
+
+Compiling:
+
+1. Install libncurses
+Use on Debian like systems: sudo apt-get install libncurses5*
+On Red Hat like systems: sudo yum install libncurses5*
+
+2. make
+
+The binary is located in ./out
+
+To execute use:
+./out/try_mmi
+
+TODO
+- Clean list with removing elements when window closed.
+- Extend to support 64-bit architecture.
+- Fix dependensies in Makefile
+
