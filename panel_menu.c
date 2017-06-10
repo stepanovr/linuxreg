@@ -20,16 +20,7 @@
  * Written by:
  * Rostislav Stepanov <stepanovr@yahoo.com>
  */
-/*
- * Very simple pop-up using ncurses form and menu library (not CDK).
- *
- * The buttons are made from items and the fields are made from... well fields.
- *
- * How to run:
- *	gcc -o test -lmenu -lform -lncurses panel_menu.c -g && ./test
- */
 
-// Depending on your OS you might need to remove 'ncurses/' from the include path.
 #include <form.h>
 #include <menu.h>
 #include <stdio.h>
@@ -37,20 +28,6 @@
 #include <assert.h>
 #include <string.h>
 
-/*
- +-------------------------------+ <-- win_body
- |+-----------------------------+|
- ||                             ||
- ||                             ||
- ||          win_form           ||
- ||                             ||
- ||                             ||
- |+-----------------------------+|
- |+-----------------------------+|
- ||          win_menu           ||
- |+-----------------------------+|
- +-------------------------------+
- */
 
 WINDOW *win_body, *win_form, *win_menu;
 FORM *form;

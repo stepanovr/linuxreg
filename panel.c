@@ -20,11 +20,6 @@
  * Written by:
  * Rostislav Stepanov <stepanovr@yahoo.com>
  */
-/*
- gcc -o panel -lmenu -lform -lncurses -lpanel panel.c -g
- gcc -o panel -lmenu -lform -lncurses -lpanel panel.c win_0.c -g
- gcc -o panel -lmenu -lform -lncurses -lpanel panel.c win_0.c win_1.c -g
-*/
 
 #include <panel.h>
 #include <stdlib.h>
